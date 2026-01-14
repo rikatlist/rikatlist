@@ -1,0 +1,68 @@
+name: "SAI — Laporan / Permintaan"
+about: "Template issue bergaya SAI: ringkasan, tujuan, langkah reproduksi, bukti, dan metadata lain."
+title: "[SAI] "
+labels:
+  - "sai"
+  - "triage"
+assignees: []
+body:
+  - type: input
+    id: short_summary
+    attributes:
+      label: "Ringkasan singkat"
+      description: "Tuliskan ringkasan singkat permasalahan atau permintaan (1 baris)."
+      placeholder: "Contoh: Error saat submit form pendaftaran"
+  - type: textarea
+    id: goal
+    attributes:
+      label: "Tujuan / Outcome yang diharapkan"
+      description: "Jelaskan tujuan atau hasil yang diharapkan dari perbaikan/fitur ini."
+      placeholder: "Contoh: Form berhasil disubmit dan user diarahkan ke dashboard"
+  - type: textarea
+    id: description
+    attributes:
+      label: "Deskripsi lengkap"
+      description: "Deskripsikan konteks, latar belakang, dan detail lain yang relevan."
+      placeholder: "Tambahkan konteks, alasan, dan efek terhadap pengguna"
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: "Langkah untuk mereproduksi (jika bug)"
+      description: "Langkah-langkah yang jelas agar tim bisa mereproduksi masalah."
+      placeholder: "1. Buka ...\n2. Klik ...\n3. Lihat error ..."
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: "Hasil yang diharapkan"
+  - type: textarea
+    id: actual_behavior
+    attributes:
+      label: "Hasil aktual"
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "Bukti (log / screenshot / video / link)"
+      description: "Sertakan screenshot, cuplikan log, atau link rekaman jika ada."
+  - type: input
+    id: environment
+    attributes:
+      label: "Environment"
+      description: "OS, browser, versi aplikasi, branch, atau konfigurasi relevant"
+      placeholder: "Contoh: Windows 11, Chrome 120, branch=main"
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "Prioritas"
+      options:
+        - High
+        - Medium
+        - Low
+  - type: input
+    id: related_links
+    attributes:
+      label: "Referensi / Link terkait (issue/PR/dokumen)"
+  - type: textarea
+    id: notes
+    attributes:
+      label: "Catatan tambahan"
+      description: "Informasi lain yang dirasa penting (compatibility, mitigasi sementara, dsb.)"
